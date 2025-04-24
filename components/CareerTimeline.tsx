@@ -1,5 +1,3 @@
-import { CheckCircle2 } from "lucide-react";
-
 const careerData = [
   {
     period: "2023.02 ~ 2025.02",
@@ -71,7 +69,7 @@ const careerData = [
 export default function CareerTimeline() {
     return (
       <div className="relative pl-6 border-l-2 border-gray-200">
-        {careerData.map((item, idx) => (
+        {careerData.map((item) => (
           <div key={item.company + item.period} className="flex items-start gap-4 mb-12 group">
             {/* 내용 */}
             <div>

@@ -10,7 +10,14 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends("next/core-web-vitals", "next/typescript"),
-];
+  ...compat.config({
+    extends: ['next/core-web-vitals', 'next/typescript'],
+    rules: {
+      "@typescript-eslint/no-empty-interface": "off",
+      // 필요하다면 아래도 추가 가능
+      // "@typescript-eslint/no-empty-object-type": "off",
+    },
+  }),
+]
 
 export default eslintConfig;
