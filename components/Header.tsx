@@ -22,10 +22,10 @@ export function Header() {
           Portfolio
         </Link>
         <Link
-          href="#contact"
+          href="#"
           className="font-inter text-[24px] text-primary hover:text-accent transition"
         >
-          Hire Me
+          Contact Me
         </Link>
       </nav>
     </header>

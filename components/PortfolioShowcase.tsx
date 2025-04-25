@@ -46,7 +46,10 @@ const projects = [
 
 export function PortfolioShowcase() {
   return (
-    <section className="flex max-w-6xl mx-auto py-16 px-6 gap-20">
+    <section
+      className="flex max-w-6xl mx-auto py-16 px-6 gap-20"
+      id="portfolio"
+    >
       {/* Section Title */}
       <div className="flex flex-col items-start self-center mb-10">
         <div className="bg-[#ffc9f0] px-6 py-2 rounded shadow-subtle mb-2 flex items-center gap-2">
