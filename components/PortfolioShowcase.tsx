@@ -65,7 +65,7 @@ export function PortfolioShowcase() {
           className="mb-2"
         />
         <p className="font-inter text-lg md:text-2xl text-[#0c0c0c] text-left w-[16rem]">
-          Have designed more than 20 projects
+          주요 프로젝트 요약
         </p>
       </div>
 
