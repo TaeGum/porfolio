@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { projects } from '@/config/portfolio.config';
 import { notFound } from 'next/navigation';
 
@@ -7,13 +8,13 @@ export default async function ProjectDetail({ params }: { params: Promise<{ id: 
   if (!project) return notFound();
 
   return (
-    <main className="max-w-2xl mx-auto px-4 py-12">
-      <h1 className="text-3xl font-bold mb-4">{project.title}</h1>
+    <main className="min-h-screen bg-white">
+      <h1 className="text-3xl font-bold text-gray-900 mb-4">{project.title}</h1>
       {project.image && (
-        <img src={project.image} alt={project.title} className="mb-6 rounded shadow" />
+        <img src={project.image} alt={project.title} className="mb-6 rounded shadow text-gray-900" />
       )}
-      <p className="mb-6">{project.description}</p>
-      <ul className="mb-6">
+      <p className="mb-6 text-gray-900">{project.description}</p>
+      <ul className="mb-6 text-gray-900">
         {project.features.map((f, i) => (
           <li key={i} className="list-disc ml-6">{f}</li>
         ))}

@@ -1,15 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Handlee } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const handlee = Handlee({
   subsets: ["latin"],
+  weight: "400",
+  variable: "--font-handlee",
 });
 
 export const metadata: Metadata = {
@@ -25,8 +24,14 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`relative ${inter.className} ${handlee.className} bg-white min-h-screen font-inter`}
       >
+        {/* 전체 배경 패턴 이미지 */}
+        <img
+          src="/bg-patterns0.png"
+          alt=""
+          className="fixed inset-0 w-full h-full object-cover max-w-6xl mx-auto -z-10 pointer-events-none"
+        />
         {children}
       </body>
     </html>

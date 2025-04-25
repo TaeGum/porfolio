@@ -1,23 +1,25 @@
-'use client';
-
-import Header from '@/components/Header';
-import About from '@/components/About';
-import CareerTimeline from '@/components/CareerTimeline';
-import Projects from '@/components/Projects';
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+// import { Portfolio } from "@/components/Portfolio";
+// import { Experience } from "@/components/Experience";
+// import { Contact } from "@/components/Contact";
+import { Footer } from "@/components/Footer";
+import { WhatIDoSection } from "@/components/WhatIDoSection";
+import { PortfolioShowcase } from "@/components/PortfolioShowcase";
+import { ExperienceFrame } from "@/components/ExperienceFrame";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#FAFAFA]">
-      <main className="max-w-3xl mx-auto px-4 py-10">
-        <Header />
-        <About />
-        <section id="career" className="py-12">
-          <h2 className="text-2xl font-bold mb-8 text-center text-gray-900">Career</h2>
-          <CareerTimeline />
-        </section>
-        <Projects />
-        {/* Contact, Footer 등 추가 가능 */}
-      </main>
+    <div className="min-h-screen overflow-x-hidden">
+      <Header />
+      <Hero />
+      <WhatIDoSection />
+      <PortfolioShowcase />
+      {/* <Portfolio /> */}
+      {/* <Experience /> */}
+      <ExperienceFrame />
+      {/* <Contact /> */}
+      <Footer />
     </div>
   );
 }
