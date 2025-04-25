@@ -1,12 +1,32 @@
-export default function Header() {
+/* eslint-disable @next/next/no-img-element */
+// components/Header.tsx
+import Link from "next/link";
+
+export function Header() {
   return (
-    <header className="flex justify-between items-center py-6 mb-12">
-      <span className="font-bold text-xl tracking-tight text-gray-900">이태검</span>
-      <nav className="flex gap-6">
-        <a href="#about" className="hover:underline text-gray-700">About</a>
-        <a href="#career" className="hover:underline text-gray-700">Career</a>
-        <a href="#projects" className="hover:underline text-gray-700">Projects</a>
-        <a href="#contact" className="hover:underline text-gray-700">Contact</a>
+    <header className="flex items-center gap-32 justify-end max-w-6xl mx-auto py-8 px-6 relative z-10">
+      <div className="flex items-center gap-2">
+        <img src="/vector0.svg" className="w-8 h-8" alt="logo" />
+        <span
+          className="font-handlee text-[20px] text-primary"
+          style={{ WebkitTextStroke: "0.5px #0c0c0c" }}
+        >
+          LeeTaeGum
+        </span>
+      </div>
+      <nav className="flex gap-8">
+        <Link
+          href="#portfolio"
+          className="font-inter text-[24px] text-primary hover:text-accent transition"
+        >
+          Portfolio
+        </Link>
+        <Link
+          href="#contact"
+          className="font-inter text-[24px] text-primary hover:text-accent transition"
+        >
+          Hire Me
+        </Link>
       </nav>
     </header>
   );
