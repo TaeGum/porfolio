@@ -1,12 +1,9 @@
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-// import { Portfolio } from "@/components/Portfolio";
-// import { Experience } from "@/components/Experience";
-// import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { WhatIDoSection } from "@/components/WhatIDoSection";
-import { PortfolioShowcase } from "@/components/PortfolioShowcase";
 import { ExperienceFrame } from "@/components/ExperienceFrame";
+import { FeaturedProjectsSection } from "@/components/FeaturedProjectsSection";
 
 export default function Home() {
   return (
@@ -14,11 +11,8 @@ export default function Home() {
       <Header />
       <Hero />
       <WhatIDoSection />
-      <PortfolioShowcase />
-      {/* <Portfolio /> */}
-      {/* <Experience /> */}
+      <FeaturedProjectsSection />
       <ExperienceFrame />
-      {/* <Contact /> */}
       <Footer />
     </div>
   );
