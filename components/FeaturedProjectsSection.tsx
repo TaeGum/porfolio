@@ -4,7 +4,6 @@ import {
   DialogContent,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
   DialogTrigger,
   DialogClose,
 } from "@/components/ui/dialog";
@@ -14,11 +13,11 @@ import Image from "next/image";
 export function FeaturedProjectsSection() {
   return (
     <section
-      className="flex max-w-6xl mx-auto py-16 px-6 gap-20"
+      className="max-w-6xl mx-auto py-16 px-6 grid grid-cols-1 lg:grid-cols-[1fr_3fr] gap-8 lg:gap-20"
       id="portfolio"
     >
       {/* Section Title */}
-      <div className="flex flex-col items-start self-center mb-10 w-fu">
+      <div className="flex flex-col items-start self-center">
         <div className="bg-[#ffc9f0] px-6 py-2 rounded shadow-subtle mb-2 flex items-center gap-2">
           <span
             className="font-handlee text-2xl md:text-3xl text-[#0c0c0c]"
@@ -38,12 +37,14 @@ export function FeaturedProjectsSection() {
           주요 프로젝트 요약
         </p>
       </div>
-      <div className="max-w-6xl mx-auto py-16 px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-12">
+
+      {/* 카드 그리드 */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
         {featuredProjects.map((proj, idx) => (
           <Dialog key={idx}>
             <DialogTrigger asChild>
-              <button className="group bg-white border-2 border-black rounded-xl shadow-subtle hover:shadow-lg transition flex flex-col items-start p-6 cursor-pointer relative">
-                <div className="w-full h-48 mb-4 relative rounded overflow-hidden">
+              <button className="group bg-white border-2 border-black rounded-xl shadow-subtle hover:shadow-lg transition flex flex-col items-start p-6 cursor-pointer w-full h-full">
+                <div className="w-full aspect-[4/3] mb-4 relative rounded overflow-hidden">
                   <Image
                     src={proj.image}
                     alt={proj.title}
@@ -61,7 +62,7 @@ export function FeaturedProjectsSection() {
                 <div className="font-inter text-base text-[#0c0c0c] mb-4">
                   {proj.summary}
                 </div>
-                <div className="flex gap-2 mt-auto">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {proj.tags.map((tag) => (
                     <span
                       key={tag}
@@ -73,7 +74,7 @@ export function FeaturedProjectsSection() {
                 </div>
               </button>
             </DialogTrigger>
-            <DialogContent className="max-w-xl rounded-xl border-2 border-black bg-white p-8 shadow-xl">
+            <DialogContent className="max-w-2xl w-[90vw] rounded-xl border-2 border-black bg-white p-8 shadow-xl">
               <DialogHeader>
                 <DialogTitle
                   className="font-handlee text-2xl text-[#0c0c0c]"
@@ -81,7 +82,7 @@ export function FeaturedProjectsSection() {
                 >
                   {proj.title}
                 </DialogTitle>
-                <div className="w-full h-48 mb-4 relative rounded overflow-hidden">
+                <div className="w-full aspect-[4/3] mb-4 relative rounded overflow-hidden">
                   <Image
                     src={proj.image}
                     alt={proj.title}
@@ -90,7 +91,7 @@ export function FeaturedProjectsSection() {
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 </div>
-                <div className="flex gap-2 mb-2">
+                <div className="flex flex-wrap gap-2 mb-2">
                   {proj.tags.map((tag) => (
                     <span
                       key={tag}
