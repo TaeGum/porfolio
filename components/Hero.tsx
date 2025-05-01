@@ -1,12 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 // components/Hero.tsx
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
   return (
     <section className="relative w-full flex flex-col md:flex-row items-center max-w-6xl mx-auto md:py-24 px-4 md:gap-16 gap-8">
       <div className="flex-1 flex flex-col gap-6 z-10 w-full">
-        <div className="flex flex-row justify-between mb-8">
+        <div className="flex flex-row justify-between lg:mb-8">
           <h1 className="font-inter text-sm sm:text-[1.75rem] md:text-[3rem] font-semibold text-primary">
             UI & 시스템 설계 효율화를
             <br />
@@ -28,8 +29,9 @@ export function Hero() {
               // size="sm"
               // className="bg-primary text-white font-inter font-semibold py-4 px-14 rounded-md shadow-strong hover:bg-primary/90 transition w-52"
               className="text-[0.7rem] w-24 py-2 md:text-2xl sm:text-2xl md:py-[18px] sm:py-[18px] sm:w-52 md:w-52 px-3 sm:px-0 md:px-0"
+              asChild
             >
-              Contact me
+              <Link href="mailto:suk0510@naver.com">Contact me</Link>
             </Button>
           </div>
         </div>

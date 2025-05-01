@@ -101,10 +101,10 @@ export function FeaturedProjectsSection() {
                     </span>
                   ))}
                 </div>
-                <div className="font-inter text-base text-[#0c0c0c] mb-2">
+                <div className="font-inter text-sm text-[#0c0c0c] mb-2 lg:text-base">
                   {proj.summary}
                 </div>
-                <ul className="list-disc pl-5 mt-2 text-base text-[#222]">
+                <ul className="list-disc pl-5 mt-2 text-sm text-[#222] text-start lg:text-base">
                   {proj.details.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
