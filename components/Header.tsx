@@ -13,7 +13,7 @@ export function Header() {
           alt="logo"
         />
         <span
-          className="font-handlee text-lg sm:text-2xl md:text-3xl tracking-tight text-primary"
+          className="font-handlee text-lg lg:text-3xl sm:text-2xl md:text-3xl tracking-tight text-primary"
           style={{ WebkitTextStroke: "0.5px #0c0c0c" }}
         >
           LeeTaeGum
@@ -22,13 +22,13 @@ export function Header() {
       <nav className="flex gap-4 sm:gap-8">
         <Link
           href="#portfolio"
-          className="font-inter text-base sm:text-lg text-primary hover:text-accent transition"
+          className="font-inter text-base lg:text-2xl sm:text-lg text-primary hover:text-accent transition"
         >
-          Portfolio
+          Projects
         </Link>
         <Link
-          href="#"
-          className="font-inter text-base sm:text-lg text-primary hover:text-accent transition"
+          href="mailto:suk0510@naver.com"
+          className="font-inter text-base lg:text-2xl sm:text-lg text-primary hover:text-accent transition"
         >
           Contact Me
         </Link>

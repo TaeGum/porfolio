@@ -16,7 +16,7 @@ export const featuredProjects: Project[] = [
     summary: "MTS 개발 및 유지보수",
     tags: ["App"],
     details: [
-      "Flutter, React, TypeScript 기반의 하이브리드 앱",
+      "Flutter, JavaScript 기반의 하이브리드 앱",
       "실시간 시세, 주문, 체결 데이터 WebSocket 연동",
       "사용자 맞춤형 UI/UX 설계, 다크모드 지원",
       "앱스토어/플레이스토어 런칭 및 유지보수",
