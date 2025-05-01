@@ -45,19 +45,20 @@
 ## 🚀 실행 방법
 
 1. **프로젝트 클론**
+```
 git clone https://github.com/TaeGum/porfolio.git
 cd porfolio
+```
 
-
-2. **패키지 설치**
-
+1. **패키지 설치**
+```
 npm install or yarn install
-
+```
 
 3. **개발 서버 실행**
-
+```
 npm run dev or yarn dev
-
+```
 
 4. 브라우저에서 [http://localhost:3000](http://localhost:3000) 접속
 
