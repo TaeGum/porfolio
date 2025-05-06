@@ -23,6 +23,10 @@ export const featuredProjects: Project[] = [
     ],
     tagColor: "bg-[#f072cd]",
     imageShadow: "shadow-[0px_4px_0px_0px_rgba(255,215,100,1.00)]",
+    playStore:
+      "https://play.google.com/store/apps/details?id=com.sangsanginib.mts&hl=ko",
+    appStore:
+      "https://apps.apple.com/kr/app/%EC%83%81%EC%83%81%EC%9D%B8%EC%A6%9D%EA%B6%8C-new-mts/id6455837410",
   },
   {
     title: "Web",
@@ -36,6 +40,7 @@ export const featuredProjects: Project[] = [
     ],
     tagColor: "bg-[#7cf072]",
     imageShadow: "shadow-[0px_4px_0px_0px_rgba(243,132,212,1.00)]",
+    homepage: "https://www.sangsanginib.com/",
   },
   {
     title: "ECG 플랫폼 개발",
@@ -49,6 +54,7 @@ export const featuredProjects: Project[] = [
     ],
     tagColor: "bg-[#5ab5e8]",
     imageShadow: "shadow-[0px_4px_0px_0px_rgba(90,181,232,1.00)]",
+    demo: "https://ecg-visualizer-highcharts-front.vercel.app/",
   },
   {
     title: "HelloData Platform",
