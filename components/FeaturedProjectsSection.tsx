@@ -109,6 +109,52 @@ export function FeaturedProjectsSection() {
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
+                {/* === 여기서부터 버튼 영역 === */}
+                <div className="flex gap-4 mt-6">
+                  {/* MTS: 앱스토어/플레이스토어 버튼 */}
+                  {proj.playStore && (
+                    <a
+                      href={proj.playStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded font-bold transition"
+                    >
+                      Play스토어
+                    </a>
+                  )}
+                  {proj.appStore && (
+                    <a
+                      href={proj.appStore}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded font-bold transition"
+                    >
+                      App스토어
+                    </a>
+                  )}
+                  {/* Web: 홈페이지 버튼 */}
+                  {proj.homepage && (
+                    <a
+                      href={proj.homepage}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-black hover:bg-gray-800 text-white px-4 py-2 rounded font-bold transition"
+                    >
+                      홈페이지 바로가기
+                    </a>
+                  )}
+                  {/* ECG플랫폼: 더미 프로젝트 링크 */}
+                  {proj.demo && (
+                    <a
+                      href={proj.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded font-bold transition"
+                    >
+                      데모 바로가기
+                    </a>
+                  )}
+                </div>
               </DialogHeader>
               <DialogClose />
             </DialogContent>

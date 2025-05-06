@@ -71,8 +71,8 @@ export function ExperienceFrame() {
         <img src="/arrow3.svg" alt="arrow" className="w-20 h-10 mb-2" />
         <p className="font-inter text-lg md:text-2xl text-[#0c0c0c] w-[16rem]">
           총 8년 5개월 경력
-          <br />
-          상세 정보 확인 가능
+          {/* <br />
+          상세 정보 확인 가능 */}
         </p>
       </div>
 
