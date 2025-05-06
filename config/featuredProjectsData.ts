@@ -1,5 +1,9 @@
 // components/featuredProjectsData.ts
 export interface Project {
+  appStore?: string;
+  homepage?: string;
+  demo?: string;
+  playStore?: string;
   title: string;
   image: string;
   summary: string;
