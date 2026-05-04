@@ -19,7 +19,7 @@ const experiences = [
     date: "05, Feb 2025",
   },
   {
-    number: 2,
+    number: 3,
     numberBg: "bg-[#9ddcff] border-[#5ab5e8]",
     company: "휴이노",
     title: "Frontend Developer at",
@@ -27,7 +27,7 @@ const experiences = [
     date: "01, Dec 2022",
   },
   {
-    number: 3,
+    number: 4,
     numberBg: "bg-[#ffc9f0] border-[#f384d4]",
     company: "JLK 인스펙션",
     title: "Frontend Developer at",
@@ -35,7 +35,7 @@ const experiences = [
     date: "07, August 2021",
   },
   {
-    number: 4,
+    number: 5,
     numberBg: "bg-[#ffe68c] border-[#eecd56]",
     company: "몽키랩",
     title: "Frontend Developer at",
@@ -43,7 +43,7 @@ const experiences = [
     date: "05, October 2019",
   },
   {
-    number: 5,
+    number: 6,
     numberBg: "bg-[#9ddcff] border-[#5ab5e8]",
     company: "디지엠정보기술",
     title: "Frontend Developer at",
@@ -51,7 +51,7 @@ const experiences = [
     date: "21, Jan 2019",
   },
   {
-    number: 6,
+    number: 7,
     numberBg: "bg-[#ffc9f0] border-[#f384d4]",
     company: "넥스트아이씨티",
     title: "Developer at",
