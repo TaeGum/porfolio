@@ -4,6 +4,14 @@ import React from "react";
 const experiences = [
   {
     number: 1,
+    numberBg: "bg-[#9ddcff] border-[#5ab5e8]",
+    company: "키움증권",
+    title: "클라이언트 개발자 at",
+    desc: "MTS 개발 및 유지보수",
+    date: "재직중",
+  },
+  {
+    number: 2,
     numberBg: "bg-[#ffe68c] border-[#eecd56]",
     company: "상상인 증권",
     title: "클라이언트 개발자 at",
@@ -70,7 +78,7 @@ export function ExperienceFrame() {
         </div>
         <img src="/arrow3.svg" alt="arrow" className="w-20 h-10 mb-2" />
         <p className="font-inter text-lg md:text-2xl text-[#0c0c0c] w-[16rem]">
-          총 8년 5개월 경력
+          총 9년 2개월 경력
           {/* <br />
           상세 정보 확인 가능 */}
         </p>
