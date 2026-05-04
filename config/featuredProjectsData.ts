@@ -22,6 +22,7 @@ export const featuredProjects: Project[] = [
     details: [
       "Flutter, JavaScript 기반의 하이브리드 앱",
       "실시간 시세, 주문, 체결 데이터 WebSocket 연동",
+      "실시간 채팅, 토론 등의 커뮤니티 클라이언트 파트 개발",
       "사용자 맞춤형 UI/UX 설계, 다크모드 지원",
       "앱스토어/플레이스토어 런칭 및 유지보수",
     ],

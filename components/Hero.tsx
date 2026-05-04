@@ -13,7 +13,7 @@ export function Hero() {
             <br />
             시각화 하고자 하는
             <br />
-            8년차 프론트엔드 개발자
+            9년차 프론트엔드 개발자
           </h1>
           <div className="flex flex-col justify-between">
             <p className="font-inter text-[0.7rem] sm:text-[1.5rem] md:text-[2rem] text-primary/90 max-w-xl md:mb-7 sm:mb-7 mb-4">
